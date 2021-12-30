@@ -6,6 +6,7 @@ public class CharacterMover : MonoBehaviour
 {
     // Start is called before the first frame update
     
+        // ENCAPSULATION
     public float speed
     {
         get
@@ -43,7 +44,7 @@ public class CharacterMover : MonoBehaviour
         }
     }
 
-
+    // ABSTRACTION
     private void MoveUp()
     {
         transform.Translate(Vector3.forward * m_speed * Time.deltaTime);
@@ -53,6 +54,7 @@ public class CharacterMover : MonoBehaviour
         }
     }
 
+    // ABSTRACTION
     private void MoveDown()
     {
         transform.Translate(Vector3.back * m_speed * Time.deltaTime);

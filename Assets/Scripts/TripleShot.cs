@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TripleShot : Enemy
 {
+    // INHERITANCE 
     [SerializeField]
     int NumberToFire = 3;
     float change = 0;
@@ -13,6 +14,8 @@ public class TripleShot : Enemy
         ogPosition = firePoint.position;
 
     }
+
+    // POLYMORPHISM
     public override void Fire()
     {
         for (int i = 0; i < NumberToFire; i++)
